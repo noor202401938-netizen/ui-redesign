@@ -41,3 +41,4 @@ An interactive, responsive screen-by-screen prototype redesign for the **TutorMa
 - **HTML5 & Vanilla CSS/JavaScript** (Zero build dependencies, portable across any browser)
 - **Typography:** Atkinson Hyperlegible & Fredoka (via Google Fonts)
 - **Speech API:** Web Speech API (SpeechSynthesis) for interactive AI voice playback
+
