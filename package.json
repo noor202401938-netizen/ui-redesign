@@ -1,0 +1,14 @@
+{
+  "name": "tutormate-ui-redesign",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TutorMate Student Debate UI/UX Interactive Prototype Redesign",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "dev": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
