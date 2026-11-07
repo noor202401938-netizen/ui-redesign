@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Voice: listening</title>
+<script src="adafef19-7b88-4c56-a803-eef799545cfd"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>/* latin-ext */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v12/9Bt23C1KxNDXMspQ1lPyU89-1h6ONRlW45G07JIoSwQ.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("3642d4a9-c544-4d81-b1b9-223a347353f7") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v12/9Bt73C1KxNDXMspQ1lPyU89-1h6ONRlW45G8Wbc9eiWPVFw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("2b63f4cd-f000-4aa8-8711-5a8244df48dc") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fredoka/v17/X7n64b87HvSqjb_WIi2yDCRwoQ_k7367_DWs89XyHw.woff2) format('woff2');
+  unicode-range: U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fredoka/v17/X7n64b87HvSqjb_WIi2yDCRwoQ_k7367_DWg89XyHw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("d788b2d2-20ae-4acd-b720-fec23a9218bb") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* hebrew */
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fredoka/v17/X7n64b87HvSqjb_WIi2yDCRwoQ_k7367_DWs89XyHw.woff2) format('woff2');
+  unicode-range: U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fredoka/v17/X7n64b87HvSqjb_WIi2yDCRwoQ_k7367_DWg89XyHw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fredoka';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("d788b2d2-20ae-4acd-b720-fec23a9218bb") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#F3F6FF}
+a{color:#14213D}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#2457D6;color:#fff;text-decoration:none;font-family:'Fredoka','Trebuchet MS',system-ui,sans-serif;font-weight:600;border:0;cursor:pointer;box-shadow:0 4px 0 #173A94;transition:transform .12s,background .12s}
+.btn:hover{background:#1C49BA;color:#fff}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #173A94}
+.close{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:#fff;border:2px solid #D5DCEF}
+.close:hover{background:#E4EAFB}
+.ghost{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:60px;padding:0 28px;border-radius:30px;background:#fff;border:3px solid #C9D2EC;color:#14213D;font:inherit;font-size:20px;font-weight:700;text-decoration:none;cursor:pointer;transition:border-color .15s,background .15s}
+.ghost:hover{border-color:#2457D6;background:#E7EEFF}
+.mic{display:inline-flex;align-items:center;justify-content:center;width:200px;height:200px;border-radius:50%;background:#173A94;box-shadow:0 0 0 18px #C9D7FF}
+.ring{position:absolute;inset:0;margin:auto;width:200px;height:200px;border-radius:50%;border:4px solid #7F9DEB;animation:ring 1.8s ease-out infinite}
+.ring.b{animation-delay:.9s}
+@keyframes ring{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.55);opacity:0}}
+.btn:focus-visible,.close:focus-visible,.ghost:focus-visible{outline:4px solid #14213D;outline-offset:4px}
+@media (prefers-reduced-motion:reduce){.btn,.ghost{transition:none}.ring{animation:none;opacity:.35}}
+</style>
+</helmet>
+<div style="min-height:800px;background:#F3F6FF;color:#14213D;font-family:'Atkinson Hyperlegible','Segoe UI',system-ui,sans-serif;display:flex;flex-direction:column">
+  <header style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 32px;flex-wrap:wrap">
+    <a class="close" href="Main.dc.html" aria-label="Leave debate">
+      <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+    </a>
+    <div style="flex:1 1 280px;min-width:0;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center">
+      <span style="font-family:'Fredoka','Trebuchet MS',system-ui,sans-serif;font-weight:600;font-size:24px;line-height:1.2;text-wrap:balance">Homework should be banned</span>
+      <div style="display:flex;align-items:center;gap:10px;font-size:16px;font-weight:700;flex-wrap:wrap;justify-content:center">
+        <span style="display:inline-flex;align-items:center;gap:8px;color:#44506E"><span style="width:12px;height:12px;border-radius:50%;background:#2457D6"></span>Opening</span>
+        <span style="width:24px;height:2px;background:#2457D6"></span>
+        <span style="display:inline-flex;align-items:center;gap:8px;color:#2457D6"><span style="width:12px;height:12px;border-radius:50%;background:#2457D6;box-shadow:0 0 0 4px #C9D7FF"></span>Closing</span>
+        <span style="width:24px;height:2px;background:#C3CCE6"></span>
+        <span style="display:inline-flex;align-items:center;gap:8px;color:#5B6788"><span style="width:12px;height:12px;border-radius:50%;border:2px solid #9AA6C6"></span>Verdict</span>
+      </div>
+    </div>
+    <span style="min-width:52px;height:52px;display:inline-flex;align-items:center;justify-content:center;padding:0 16px;border-radius:26px;border:2px solid #D5DCEF;background:#fff;font-size:16px;font-weight:700;color:#44506E;white-space:nowrap">Round 2 of 2</span>
+  </header>
+  <main style="flex:1;display:flex;flex-direction:column;gap:20px;width:100%;max-width:1040px;margin:0 auto;padding:8px 32px 32px">
+    <div style="flex:1;display:flex;gap:48px;align-items:center;flex-wrap:wrap">
+      <section aria-label="Your words, live" style="flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:20px">
+        <div style="background:#fff;border:3px solid #2457D6;border-radius:28px;padding:22px 24px;display:flex;flex-direction:column;gap:12px">
+          <span style="display:inline-flex;align-items:center;gap:10px;font-size:17px;font-weight:700;color:#1C49BA">
+            <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#1C49BA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"></path></svg>
+            You, live
+          </span>
+          <p aria-live="polite" style="margin:0;font-size:22px;line-height:1.55">I think homework should be banned because we need time to rest after school. A short break can help our brains more than extra work, and we can still learn by…</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;align-items:baseline;gap:10px">
+            <span style="font-family:'Fredoka','Trebuchet MS',system-ui,sans-serif;font-weight:600;font-size:40px;line-height:1;font-variant-numeric:tabular-nums">0:18</span>
+            <span style="font-size:18px;color:#44506E">of 1:00</span>
+          </div>
+          <div role="img" aria-label="18 seconds used out of 60" style="height:14px;border-radius:7px;background:#D5DCEF;overflow:hidden">
+            <div style="width:30%;height:100%;border-radius:7px;background:#2457D6"></div>
+          </div>
+        </div>
+      </section>
+      <section aria-label="Recording controls" style="flex:1 1 380px;min-width:0;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center">
+        <h1 style="margin:0;font-family:'Fredoka','Trebuchet MS',system-ui,sans-serif;font-weight:600;font-size:clamp(30px,4vw,40px);line-height:1.1">I'm listening…</h1>
+        <p style="margin:0;font-size:20px;line-height:1.5;color:#44506E;max-width:20em;text-wrap:balance">Keep talking. Let go when you're done.</p>
+        <div style="position:relative;width:280px;height:260px;display:flex;align-items:center;justify-content:center">
+          <span class="ring" aria-hidden="true"></span>
+          <span class="ring b" aria-hidden="true"></span>
+          <div class="mic" role="img" aria-label="Microphone is on">
+            <svg width="84" height="84" sc-camel-view-box="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"></path></svg>
+          </div>
+        </div>
+        <div aria-hidden="true" style="display:flex;align-items:center;gap:8px;height:72px">
+          <span style="width:8px;height:24px;border-radius:4px;background:#2457D6"></span>
+          <span style="width:8px;height:44px;border-radius:4px;background:#2457D6"></span>
+          <span style="width:8px;height:32px;border-radius:4px;background:#2457D6"></span>
+          <span style="width:8px;height:64px;border-radius:4px;background:#2457D6"></span>
+          <span style="width:8px;height:48px;border-radius:4px;background:#2457D6"></span>
+          <span style="width:8px;height:72px;border-radius:4px;background:#2457D6"></span>
+          <span style="width:8px;height:40px;border-radius:4px;background:#2457D6"></span>
+          <span style="width:8px;height:56px;border-radius:4px;background:#2457D6"></span>
+          <span style="width:8px;height:28px;border-radius:4px;background:#2457D6"></span>
+        </div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center">
+          <a class="ghost" href="Voice.dc.html">
+            <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#14213D" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+            Cancel
+          </a>
+          <a class="btn" href="Home.dc.html" style="min-height:60px;padding:0 36px;border-radius:30px;font-size:24px">
+            <svg width="24" height="24" sc-camel-view-box="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
+            Done
+          </a>
+        </div>
+      </section>
+    </div>
+    <p style="margin:0;text-align:center;font-size:16px;color:#44506E">Your words show up as text while you talk, so you can check them.</p>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:800}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+
+
+</body></html>
